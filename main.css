@@ -1,0 +1,54 @@
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg,blue,red);
+    color:white
+}
+
+
+.TitleBox{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.TaskBox{
+    display: grid;
+    width: 100vw;
+    height:calc(100vh - 10vh);
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 0.5%;
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taskContainer{
+    border:1px solid white;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur (3px);
+    border-radius:3px;
+    width: 300px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.taskContainer:hover{
+    transform: scale(1.1);
+}
+
+.centerBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
