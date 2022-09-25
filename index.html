@@ -6,7 +6,8 @@
     <title>To Do</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='./main.css'>
-    <script src='main.js'></script>
+    <script src='main.js'>
+    </script>
 </head>
 <body>
     <div class="TitleBox">
@@ -15,13 +16,18 @@
     <div class="TaskBox">
         <div class="leftBox">
             <h3>Hoy</h3>
-            <div class="taskContainer">
-                <ul style="list-style:none;">
+            <div id="todayTasks" class="taskContainer">
+                <h3 class="noHayJoven">No hay nada por hacer, a dormir</h3>
+                <!--ul style="list-style:none;">
                     <li><input type="checkbox"/>Programar</li>
                     <li><input type="checkbox"/>arreglar lo que programe</li>
                     <li><input type="checkbox"/>agregar bugs</li>
                     <li><input type="checkbox"/>dormir</li>
-                </ul>
+                </ul-->
+            </div>
+            <div class="addInputContainer">
+                <input id="addTodayInput"/>
+                <a id="addTodayInputBtn" class="floatButton">+</a>
             </div>
         </div>
         <div class="centerBox">

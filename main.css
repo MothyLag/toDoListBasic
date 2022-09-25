@@ -38,7 +38,11 @@ html,body{
     cursor: pointer;
 }
 
-.taskContainer:hover{
+.taskContainer li{
+    transition: 0.3s all ease;
+}
+
+.taskContainer li:hover{
     transform: scale(1.1);
 }
 
@@ -51,4 +55,38 @@ html,body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.noHayJoven{
+    color:rgb(207, 204, 204);
+}
+
+.floatButton{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(66, 66, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.addInputContainer{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.addInputContainer input{
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.floatButton:hover{
+    transform: scale(1.1);
 }
